@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 function ProductPage() {
   const [product, setProduct] = useState(null);
@@ -44,7 +45,7 @@ function ProductPage() {
   return (
     <div className='container pt-7 mx-auto px-10 flex pb-25 flex-wrap space-x-20'>
       <div className="flex justify-center border-4 border-black rounded-md overflow-hidden w-full max-w-[600px] mx-auto">
-        <img
+        <Image
           alt={product.imageAlt}
           src={product.imageSrc}
           className="w-full h-auto object-contain p-1"

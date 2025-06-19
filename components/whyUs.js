@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 function WhyUs() {
   return (
@@ -17,7 +18,7 @@ function WhyUs() {
             </ul>
         </div>
         <div>
-            <img src="https://suzukicycles.com/-/media/project/cycles/images/gsx-8r-microsite/images/headers/2024gsx8rmicrositelifestyleheader2500x1227r10.jpg?mw=992&w=992&hash=CF9120705622AF93F9D5FAAD0BAFB9C9" 
+            <Image src="https://suzukicycles.com/-/media/project/cycles/images/gsx-8r-microsite/images/headers/2024gsx8rmicrositelifestyleheader2500x1227r10.jpg?mw=992&w=992&hash=CF9120705622AF93F9D5FAAD0BAFB9C9" 
             alt="Why Us" className='w-150 h-100 shadow-2xl object-cover rounded-lg' />
         </div>
     </div>

@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -30,7 +31,7 @@ function Products() {
               {displayedProducts.map((product) => (
                 <div key={product.id} className="group transition-transform duration-300 hover:scale-105 shadow-2xl relative border-4 border-black p-6 rounded-md h-full">
                   <Link href={`/Shop/Produits/${product.id}`}>
-                    <img
+                    <Image
                       alt={product.imageAlt || product.name}
                       src={product.imageSrc}
                       className="w-full h-48 object-cover mb-4"

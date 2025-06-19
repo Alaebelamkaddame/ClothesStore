@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 
 function Hero() {
   const handleClick = () => {
@@ -10,7 +11,7 @@ function Hero() {
   return (
     <section className="relative w-full h-[600px] overflow-hidden">
       {/* Image with proper sizing and centering */}
-      <img 
+      <Image 
         src="/HeroImage.png" 
         alt="hero"  
         className="w-full h-full object-cover object-center"
@@ -27,7 +28,7 @@ function Hero() {
           <h1 className="text-4xl md:text-7xl font-extrabold text-white drop-shadow-xl mb-4"  style={{ fontFamily: 'var(--font-bebas)' }}>
           Tame the Road. Own the Ride
           </h1>
-          <p className='font-bold text-5xl'  style={{ fontFamily: 'var(--font-bebas)' }}>Why waiting, let's ride</p>
+          <p className='font-bold text-5xl'  style={{ fontFamily: 'var(--font-bebas)' }}>Why waiting?</p>
           <button onClick={handleClick} className='cursor-pointer border-2 text-2xl my-4 border-white bg-transparent hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform p-3 rounded-md'  style={{ fontFamily: 'var(--font-bebas)' }}>WhatsApp</button>
         </div>
       </div>

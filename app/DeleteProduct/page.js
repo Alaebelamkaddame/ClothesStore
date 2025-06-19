@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function DeleteProductPage() {
   const [products, setProducts] = useState([]);
@@ -56,7 +57,7 @@ function DeleteProductPage() {
                   className="border-4 border-black p-4 rounded-lg hover:shadow-xl transition"
                 >
                   {product.imageSrc && (
-                    <img 
+                    <Image 
                       src={product.imageSrc} 
                       alt={product.imageAlt || product.name}
                       className="w-full h-48 object-cover mb-4"

@@ -46,22 +46,22 @@ export default function Page() {
   };
 
   return (
-    <div className="bg-black text-white p-6 sm:p-8">
-      <div className="max-w-2xl mx-auto font-serif">
+    <div className="bg-white text-black p-6 sm:p-8">
+      <div className="max-w-2xl mx-auto" style={{ fontFamily: 'var(--font-roboto)' }}>
         <h2 className="text-3xl font-bold mb-6 text-center">Contact Us</h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* First Name and Last Name Inputs */}
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
-              <label htmlFor="firstName" className="block text-sm font-medium mb-1">
+              <label htmlFor="firstName" className="block font-medium mb-1">
                 First Name
               </label>
               <input
                 type="text"
                 name="firstName"
                 id="firstName"
-                className="w-full bg-transparent border-white rounded-md py-2 px-3 border focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full bg-transparent border-black rounded-md py-2 px-3 border focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 value={formData.firstName}
                 onChange={handleChange}
                 required
@@ -69,14 +69,14 @@ export default function Page() {
             </div>
 
             <div>
-              <label htmlFor="lastName" className="block text-sm font-medium mb-1">
+              <label htmlFor="lastName" className="block font-medium mb-1">
                 Last Name
               </label>
               <input
                 type="text"
                 name="lastName"
                 id="lastName"
-                className="w-full bg-transparent border-white rounded-md py-2 px-3 border focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full bg-transparent border-black rounded-md py-2 px-3 border focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 value={formData.lastName}
                 onChange={handleChange}
                 required
@@ -86,14 +86,14 @@ export default function Page() {
 
           {/* Email Input */}
           <div>
-            <label htmlFor="email" className="block text-sm font-medium mb-1">
+            <label htmlFor="email" className="block font-medium mb-1">
               Email
             </label>
             <input
               type="email"
               name="email"
               id="email"
-              className="w-full bg-transparent border-white rounded-md py-2 px-3 border focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full bg-transparent border-black rounded-md py-2 px-3 border focus:outline-none focus:ring-2 focus:ring-indigo-500"
               value={formData.email}
               onChange={handleChange}
               required
@@ -102,14 +102,14 @@ export default function Page() {
 
           {/* Message Input */}
           <div>
-            <label htmlFor="message" className="block text-sm font-medium mb-1">
+            <label htmlFor="message" className="block font-medium mb-1">
               Message
             </label>
             <textarea
               name="message"
               id="message"
               rows={4}
-              className="w-full bg-transparent border-white rounded-md py-2 px-3 border focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full bg-transparent border-black rounded-md py-2 px-3 border focus:outline-none focus:ring-2 focus:ring-indigo-500"
               value={formData.message}
               onChange={handleChange}
               required
@@ -120,7 +120,7 @@ export default function Page() {
           <div className="pt-2">
             <button
               type="submit"
-              className="w-full py-2 px-4 bg-transparent hover:bg-white hover:text-black border-2 rounded-md font-medium cursor-pointer transition-all duration-300 ease-in-out transform"
+              className="w-full py-2 px-4 bg-transparent hover:bg-black hover:text-white border-2 rounded-md font-medium cursor-pointer transition-all duration-300 ease-in-out transform"
             >
               Submit
             </button>
